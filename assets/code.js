@@ -15,7 +15,7 @@ $(document).on('click','#submit',function(){
     if(country1 == ""){
       // you may allow it as per your model needs
       // you may mark some fields with * (star) and make sure they aren't empty here
-      alert("empty fields not allowed");
+      alert("empty fields not allowed or your country is not top 50 nominal GDP nation");
     }
     else{
       // replace <username> with your pythonanywhere username
