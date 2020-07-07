@@ -3,11 +3,11 @@ var country;
 $(document).ready(function(){
   // fetch all DOM elements for the input
   country = document.getElementById("country");
+  // alert('JQUERY BABY')
   //feature2_ = document.getElementById("feature2");
   //feature3_ = document.getElementById("feature3");
-})
-
-$(document).on('click','#submit',function(){
+  
+  $('#submit').on('click', function(){
     // on clicking submit fetch values from DOM elements and use them to make request to our flask API
     var country1 = country.value;
     //var feature2 = feature2_.value;
@@ -32,3 +32,6 @@ $(document).on('click','#submit',function(){
       $(".result").html("Prediction is:" + prediction);
     }
   });
+})
+
+
